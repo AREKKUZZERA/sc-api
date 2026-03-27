@@ -17,22 +17,10 @@ async function getTrackData() {
   try {
     statusEl.textContent = "Updating...";
 
-    const res = await fetch(PROXY_URL);
-    const text = await res.text();
+    const res = await fetch(PROXY_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    console.log("status:", res.status);
-    console.log("raw:", text);
-
-    let track;
-    try {
-      track = JSON.parse(text);
-    } catch {
-      throw new Error("Proxy did not return JSON");
-    }
-
-    if (!res.ok) {
-      throw new Error(track.error || `HTTP ${res.status}`);
-    }
+    const track = await res.json();
 
     if (typeof track.playback_count !== "number") {
       throw new Error("playback_count not found");
@@ -43,20 +31,35 @@ async function getTrackData() {
 
     if (previousCount !== null) {
       const diff = currentCount - previousCount;
-      changeEl.textContent = diff > 0 ? `+${diff.toLocaleString()}` : diff < 0 ? `${diff.toLocaleString()}` : "No change";
+
+      if (diff > 0) {
+        changeEl.textContent = `+${diff.toLocaleString()}`;
+        changeEl.className = "change up";
+        playsEl.classList.remove("pulse");
+        void playsEl.offsetWidth;
+        playsEl.classList.add("pulse");
+      } else if (diff < 0) {
+        changeEl.textContent = `${diff.toLocaleString()}`;
+        changeEl.className = "change down";
+      } else {
+        changeEl.textContent = "No change";
+        changeEl.className = "change";
+      }
     } else {
       changeEl.textContent = "First load";
+      changeEl.className = "change";
     }
 
     previousCount = currentCount;
     statusEl.textContent = `Last update: ${new Date().toLocaleTimeString()}`;
   } catch (err) {
-    console.error(err);
+    console.error("Overlay error:", err);
     playsEl.textContent = "Error";
     changeEl.textContent = err.message;
+    changeEl.className = "change down";
     statusEl.textContent = "Update failed";
   }
 }
 
-setInterval(getTrackData, 30000);
 getTrackData();
+setInterval(getTrackData, 30000);
