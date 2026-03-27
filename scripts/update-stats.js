@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const STATS_PATH = path.join(__dirname, "..", "stats.json");
-const PROXY_URL = "https://proxy-sc.vercel.app/api/plays";
+const PROXY_URL = "https://proxy-sc.vercel.app/api/dashboard";
 
 function todayParts() {
   const now = new Date();
