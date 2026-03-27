@@ -1,8 +1,7 @@
-const PROXY_URL = "https://proxy-sc.vercel.app/api/plays";
-const STATS_URL = "./stats.json";
+const API_URL = "https://proxy-sc.vercel.app/api/dashboard";
 
 let previousCount = null;
-let statsData = null;
+let dashboardData = null;
 
 function full(num) {
   return Number(num).toLocaleString("en-US");
@@ -13,15 +12,6 @@ function compact(num) {
     notation: "compact",
     maximumFractionDigits: 1
   }).format(num);
-}
-
-function estimateExtraMetrics(totalPlays) {
-  return {
-    likes: Math.round(totalPlays * 0.0108),
-    comments: Math.round(totalPlays * 0.00021),
-    reposts: Math.round(totalPlays * 0.00022),
-    downloads: 1
-  };
 }
 
 function buildYAxis(maxValue) {
@@ -43,15 +33,12 @@ function renderChart(series, subtitle) {
 
   chartArea.innerHTML = "";
   chartSubtitle.textContent = subtitle;
-
   chartArea.style.gridTemplateColumns = `repeat(${series.length}, 1fr)`;
 
   const maxSeriesValue = Math.max(...series.map(item => item.plays), 1);
   const visualMax = Math.ceil(maxSeriesValue * 1.15);
 
   buildYAxis(visualMax);
-
-  const maxBarHeight = 100;
 
   series.forEach((item, index) => {
     const group = document.createElement("div");
@@ -63,7 +50,7 @@ function renderChart(series, subtitle) {
     const bar = document.createElement("div");
     bar.className = index >= Math.max(series.length - 4, 0) ? "bar active" : "bar";
 
-    const h = Math.max((item.plays / visualMax) * maxBarHeight, item.plays > 0 ? 4 : 0);
+    const h = Math.max((item.plays / visualMax) * 100, item.plays > 0 ? 4 : 0);
     bar.style.height = `${h}%`;
     bar.title = `${item.label}: ${full(item.plays)}`;
 
@@ -78,57 +65,8 @@ function renderChart(series, subtitle) {
   });
 }
 
-async function loadStatsJson() {
-  const res = await fetch(STATS_URL, { cache: "no-store" });
-  if (!res.ok) {
-    throw new Error(`stats.json HTTP ${res.status}`);
-  }
-  return res.json();
-}
-
-async function loadProxyData() {
-  const res = await fetch(PROXY_URL, { cache: "no-store" });
-  if (!res.ok) {
-    throw new Error(`proxy HTTP ${res.status}`);
-  }
-  return res.json();
-}
-
-function applyMetrics(totalPlays) {
-  const extra = estimateExtraMetrics(totalPlays);
-
-  document.getElementById("playsValue").textContent = full(totalPlays);
-  document.getElementById("headlinePlays").textContent = full(totalPlays);
-  document.getElementById("likesValue").textContent = full(extra.likes);
-  document.getElementById("commentsValue").textContent = full(extra.comments);
-  document.getElementById("repostsValue").textContent = full(extra.reposts);
-  document.getElementById("downloadsValue").textContent = full(extra.downloads);
-}
-
-function applyGrowth(totalPlays) {
-  const growthText = document.getElementById("growthText");
-
-  if (previousCount === null) {
-    growthText.textContent = "(+0)";
-    previousCount = totalPlays;
-    return;
-  }
-
-  const diff = totalPlays - previousCount;
-
-  if (diff > 0) {
-    growthText.textContent = `(+${full(diff)})`;
-  } else if (diff < 0) {
-    growthText.textContent = `(${full(diff)})`;
-  } else {
-    growthText.textContent = "(0)";
-  }
-
-  previousCount = totalPlays;
-}
-
 function renderSelectedRange(rangeKey) {
-  if (!statsData || !statsData.history || !statsData.history[rangeKey]) return;
+  if (!dashboardData?.history?.[rangeKey]) return;
 
   const subtitleMap = {
     yearly: "All-time yearly view",
@@ -136,35 +74,43 @@ function renderSelectedRange(rangeKey) {
     daily: "This month by day"
   };
 
-  renderChart(statsData.history[rangeKey], subtitleMap[rangeKey] || "");
+  renderChart(dashboardData.history[rangeKey], subtitleMap[rangeKey] || "");
 }
 
 async function initDashboard() {
   try {
-    const [stats, proxy] = await Promise.all([
-      loadStatsJson(),
-      loadProxyData()
-    ]);
+    const res = await fetch(API_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
-    statsData = stats;
+    const data = await res.json();
+    dashboardData = data;
 
-    const totalPlays = proxy.playback_count;
-    if (typeof totalPlays !== "number") {
-      throw new Error("playback_count not found");
-    }
+    const totalPlays = data.playback_count;
 
-    document.getElementById("sinceYear").textContent = stats.sinceYear || 2016;
-    document.getElementById("trackTitle").textContent = proxy.title || "Unknown track";
+    document.getElementById("sinceYear").textContent = data.sinceYear || 2016;
+    document.getElementById("trackTitle").textContent = data.trackTitle || "Unknown track";
     document.getElementById("lastUpdate").textContent =
-      `Last update: ${new Date().toLocaleTimeString()}`;
+      `Last update: ${new Date(data.updatedAt || Date.now()).toLocaleTimeString()}`;
 
-    applyMetrics(totalPlays);
-    applyGrowth(totalPlays);
+    document.getElementById("headlinePlays").textContent = full(totalPlays);
+    document.getElementById("playsValue").textContent = full(totalPlays);
+    document.getElementById("likesValue").textContent = full(data.likes || 0);
+    document.getElementById("commentsValue").textContent = full(data.comments || 0);
+    document.getElementById("repostsValue").textContent = full(data.reposts || 0);
+    document.getElementById("downloadsValue").textContent = full(data.downloads || 0);
 
-    const selectedRange = document.getElementById("rangeSelect").value;
-    renderSelectedRange(selectedRange);
+    const growthText = document.getElementById("growthText");
+    if (previousCount === null) {
+      growthText.textContent = "(+0)";
+    } else {
+      const diff = totalPlays - previousCount;
+      growthText.textContent = diff > 0 ? `(+${full(diff)})` : diff < 0 ? `(${full(diff)})` : "(0)";
+    }
+    previousCount = totalPlays;
+
+    renderSelectedRange(document.getElementById("rangeSelect").value);
   } catch (err) {
-    console.error("Dashboard error:", err);
+    console.error(err);
     document.getElementById("headlinePlays").textContent = "Error";
     document.getElementById("playsValue").textContent = "Error";
     document.getElementById("trackTitle").textContent = err.message;
