@@ -3,17 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SoundCloud Live Stats</title>
+  <title>SoundCloud Insights Style</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="label">SoundCloud Plays</div>
-    <div id="plays" class="plays" data-full="">Loading...</div>
-    <div id="change" class="change">Waiting...</div>
-    <div id="status" class="status">Starting...</div>
-  </div>
+  <main class="dashboard">
+    <div class="topbar">
+      <h1>Insights</h1>
 
-  <script src="app.js?v=2"></script>
+      <div class="range-wrap">
+        <select id="rangeSelect">
+          <option value="all">All time</option>
+          <option value="year">This year</option>
+          <option value="month">This month</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tabs">
+      <button class="tab active">SoundCloud</button>
+      <button class="tab">All Platforms</button>
+      <button class="tab">Fans</button>
+    </div>
+
+    <section class="hero">
+      <div class="headline">
+        <span id="headlinePlays">0</span> plays since 2016
+        <span class="growth">(+100%)</span>
+      </div>
+
+      <div class="meta">
+        <span id="trackTitle">Loading track...</span>
+        <span id="lastUpdate">Starting...</span>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card stat-primary">
+        <div class="stat-label">Plays</div>
+        <div class="stat-value" id="playsValue">0</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Likes</div>
+        <div class="stat-value" id="likesValue">18,740</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Comments</div>
+        <div class="stat-value" id="commentsValue">365</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Reposts</div>
+        <div class="stat-value" id="repostsValue">375</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-label">Downloads</div>
+        <div class="stat-value" id="downloadsValue">1</div>
+      </div>
+    </section>
+
+    <section class="chart-panel">
+      <div class="chart-header">
+        <div>
+          <div class="chart-title">Play history</div>
+          <div class="chart-subtitle">Styled like Insights</div>
+        </div>
+      </div>
+
+      <div class="chart-wrap">
+        <div class="chart-y-axis">
+          <span>1M</span>
+          <span>800K</span>
+          <span>600K</span>
+          <span>400K</span>
+          <span>200K</span>
+          <span>0</span>
+        </div>
+
+        <div class="chart-area" id="chartArea"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js?v=3"></script>
 </body>
 </html>
