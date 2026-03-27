@@ -35,12 +35,13 @@ function renderChart(series) {
 
   chartArea.style.gridTemplateColumns = `repeat(${series.length}, 1fr)`;
 
-  const maxSeriesValue = Math.max(...series.map(item => Number(item.plays || 0)), 1);
-  const visualMax = Math.ceil(maxSeriesValue * 1.12);
+  const values = series.map(item => Number(item.plays || 0));
+  const maxSeriesValue = Math.max(...values, 1);
+  const visualMax = Math.ceil(maxSeriesValue * 1.08);
 
   buildYAxis(visualMax);
 
-  series.forEach((item, index) => {
+  series.forEach((item) => {
     const group = document.createElement("div");
     group.className = "bar-group";
 
@@ -48,16 +49,17 @@ function renderChart(series) {
     col.className = "bar-col";
 
     const bar = document.createElement("div");
-    bar.className = index >= Math.max(series.length - 4, 0) ? "bar active" : "bar";
-
-    const value = Number(item.plays || 0);
-    const height = Math.max((value / visualMax) * 100, value > 0 ? 4 : 0);
-    bar.style.height = `${height}%`;
-    bar.title = `${item.label}: ${full(value)}`;
-
     const label = document.createElement("div");
+
+    bar.className = Number(item.plays || 0) > 0 ? "bar active" : "bar";
     label.className = "bar-label";
     label.textContent = item.label;
+
+    const value = Number(item.plays || 0);
+    const height = value > 0 ? Math.max((value / visualMax) * 100, 4) : 0;
+
+    bar.style.height = `${height}%`;
+    bar.title = `${item.label}: ${full(value)}`;
 
     col.appendChild(bar);
     col.appendChild(label);
@@ -129,6 +131,7 @@ function updateGrowth(totalPlays) {
   }
 
   const diff = totalPlays - previousCount;
+
   if (diff > 0) {
     growthText.textContent = `(+${full(diff)})`;
   } else if (diff < 0) {
