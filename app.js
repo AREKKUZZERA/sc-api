@@ -35,11 +35,14 @@ function renderChart(series) {
 
   chartArea.style.gridTemplateColumns = `repeat(${series.length}, 1fr)`;
 
+  const isYearly = series.length >= 8;
   const values = series.map(item => Number(item.plays || 0));
   const maxSeriesValue = Math.max(...values, 1);
-  const visualMax = Math.ceil(maxSeriesValue * 1.08);
+  const visualMax = isYearly ? 1000000 : Math.ceil(maxSeriesValue * 1.12);
 
   buildYAxis(visualMax);
+
+  const activeYears = new Set(["2023", "2024", "2025", "2026"]);
 
   series.forEach((item) => {
     const group = document.createElement("div");
@@ -48,20 +51,32 @@ function renderChart(series) {
     const col = document.createElement("div");
     col.className = "bar-col";
 
-    const bar = document.createElement("div");
-    const label = document.createElement("div");
+    const stack = document.createElement("div");
+    stack.className = "bar-stack";
 
-    bar.className = Number(item.plays || 0) > 0 ? "bar active" : "bar";
+    const bg = document.createElement("div");
+    bg.className = "bar-bg";
+
+    const fill = document.createElement("div");
+    fill.className = "bar-fill";
+
+    const value = Number(item.plays || 0);
+    const height = value > 0 ? Math.max((value / visualMax) * 100, 2.5) : 0;
+
+    fill.style.height = `${height}%`;
+    fill.title = `${item.label}: ${full(value)}`;
+
+    if ((isYearly && !activeYears.has(item.label)) || value === 0) {
+      fill.classList.add("zero");
+    }
+
+    const label = document.createElement("div");
     label.className = "bar-label";
     label.textContent = item.label;
 
-    const value = Number(item.plays || 0);
-    const height = value > 0 ? Math.max((value / visualMax) * 100, 4) : 0;
-
-    bar.style.height = `${height}%`;
-    bar.title = `${item.label}: ${full(value)}`;
-
-    col.appendChild(bar);
+    stack.appendChild(bg);
+    stack.appendChild(fill);
+    col.appendChild(stack);
     col.appendChild(label);
     group.appendChild(col);
     chartArea.appendChild(group);
