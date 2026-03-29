@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1735689,
+  "lastTotal": 1736932,
   "lastTrackTitle": "",
   "snapshots": [
     {
@@ -9,13 +9,20 @@
       "month": "Mar",
       "day": "28",
       "total": 1735689
+    },
+    {
+      "key": "2026-Mar-29",
+      "year": "2026",
+      "month": "Mar",
+      "day": "29",
+      "total": 1736932
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 0
+        "plays": 1243
       }
     ],
     "monthly": [
@@ -29,7 +36,7 @@
       },
       {
         "label": "Mar",
-        "plays": 0
+        "plays": 1243
       },
       {
         "label": "Apr",
@@ -179,6 +186,10 @@
       },
       {
         "label": "28",
+        "plays": 0
+      },
+      {
+        "label": "29",
         "plays": 0
       }
     ]
