@@ -488,6 +488,60 @@ function mergeDashboardData(liveData, statsData) {
   return merged;
 }
 
+function countNonZeroSeriesItems(series) {
+  return (Array.isArray(series) ? series : []).filter((item) => toNumber(item?.plays) > 0).length;
+}
+
+function getHistoryScore(history) {
+  if (!history) {
+    return -1;
+  }
+
+  const yearly = Array.isArray(history.yearly) ? history.yearly : [];
+  const monthly = Array.isArray(history.monthly) ? history.monthly : [];
+  const daily = Array.isArray(history.daily) ? history.daily : [];
+
+  return (
+    yearly.length +
+    monthly.length +
+    daily.length +
+    countNonZeroSeriesItems(yearly) * 10 +
+    countNonZeroSeriesItems(monthly) * 10 +
+    countNonZeroSeriesItems(daily) * 10
+  );
+}
+
+function pickBestHistory(liveHistory, statsHistory) {
+  const liveScore = getHistoryScore(liveHistory);
+  const statsScore = getHistoryScore(statsHistory);
+
+  return liveScore >= statsScore ? liveHistory : statsHistory;
+}
+
+function mergeDashboardData(liveData, statsData) {
+  const referenceDate = getSafeDate(liveData?.updatedAt || statsData?.updatedAt);
+  const sourceSinceYear = toNumber(liveData?.sinceYear || statsData?.sinceYear) || 2016;
+
+  const bestHistory = pickBestHistory(liveData?.history, statsData?.history);
+  const bestHistoryMeta =
+    bestHistory === liveData?.history
+      ? (liveData?.historyMeta || {})
+      : (statsData?.historyMeta || {});
+
+  const historySource =
+    bestHistory === liveData?.history
+      ? "remote"
+      : bestHistory === statsData?.history
+        ? "local"
+        : "none";
+
+  const history = normalizeHistory(
+    bestHistory,
+    referenceDate,
+    sourceSinceYear,
+    bestHistoryMeta
+  );
+
   const merged = {
     history,
     historySource,
