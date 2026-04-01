@@ -1,7 +1,7 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1739312,
-  "lastTrackTitle": "",
+  "lastTotal": 1740527,
+  "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
       "key": "2026-Mar-28",
@@ -30,13 +30,20 @@
       "month": "Mar",
       "day": "31",
       "total": 1739312
+    },
+    {
+      "key": "2026-Apr-1",
+      "year": "2026",
+      "month": "Apr",
+      "day": "1",
+      "total": 1740527
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 3623
+        "plays": 4838
       }
     ],
     "monthly": [
@@ -50,7 +57,7 @@
       },
       {
         "label": "Mar",
-        "plays": 3623
+        "plays": 4838
       },
       {
         "label": "Apr",
@@ -200,31 +207,106 @@
       },
       {
         "label": "28",
-        "plays": 1243
+        "plays": 0
       },
       {
         "label": "29",
-        "plays": 1136
+        "plays": 0
       },
       {
         "label": "30",
-        "plays": 1244
-      },
-      {
-        "label": "31",
         "plays": 0
       }
     ]
   },
-  "playback_count": 1739312,
-  "trackTitle": "All Tracks",
+  "playback_count": 1740527,
+  "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
-  "tracks": [],
+  "tracks": [
+    {
+      "id": 1510172020,
+      "title": "Psycho Dreams (HARDSTYLE REMIX)",
+      "playback_count": 387330,
+      "likes_count": 3776,
+      "comment_count": 53,
+      "reposts_count": 32,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/psycho-dreams-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-iEtcmU2ryYqwMtIJ-1qVMgA-large.jpg",
+      "created_at": "2023-05-09T11:59:13Z"
+    },
+    {
+      "id": 1624227204,
+      "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
+      "playback_count": 314887,
+      "likes_count": 3782,
+      "comment_count": 65,
+      "reposts_count": 51,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/angel-vox-vozvrashchaysya-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-LWfre5LHJDb7b3Yy-owXeKg-large.jpg",
+      "created_at": "2023-09-24T14:04:21Z"
+    },
+    {
+      "id": 1665544803,
+      "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
+      "playback_count": 145289,
+      "likes_count": 1422,
+      "comment_count": 34,
+      "reposts_count": 23,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/zhanulka-ty-pokhozh-na-kota-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-Yqnn5cpukI3Qebod-Nvfi7g-large.jpg",
+      "created_at": "2023-11-15T13:36:38Z"
+    },
+    {
+      "id": 1710205407,
+      "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
+      "playback_count": 127303,
+      "likes_count": 1520,
+      "comment_count": 13,
+      "reposts_count": 25,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/violent-vira-i-dont-care-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-R9iz3SZht9pHeuy2-N8F01Q-large.jpg",
+      "created_at": "2024-01-06T16:59:06Z"
+    },
+    {
+      "id": 1518557188,
+      "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
+      "playback_count": 90543,
+      "likes_count": 800,
+      "comment_count": 13,
+      "reposts_count": 15,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/tmsts-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-c3DLw3gILKFh9aHB-BFk01A-large.jpg",
+      "created_at": "2023-05-20T18:25:59Z"
+    },
+    {
+      "id": 1436304634,
+      "title": "Badda Boo - Искренности (DUMBZZERA HARDSTYLE REMIX)",
+      "playback_count": 36784,
+      "likes_count": 371,
+      "comment_count": 12,
+      "reposts_count": 3,
+      "download_count": 0,
+      "permalink_url": "https://soundcloud.com/arekkuzzera/stepen-iskrennosti-dumbzzera-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-tHqcxpQ4tsYIWoCb-Cy49fQ-large.jpg",
+      "created_at": "2023-01-31T04:02:26Z"
+    }
+  ],
   "historyMeta": {
     "yearlyStart": "2026",
     "yearlyEnd": "2026",
     "monthlyYear": "2026",
     "dailyYear": "2026",
-    "dailyMonth": "Mar"
-  }
+    "dailyMonth": "Apr"
+  },
+  "likes": 18770,
+  "comments": 369,
+  "reposts": 375,
+  "downloads": 1,
+  "trackCount": 46,
+  "updatedAt": "2026-04-01T02:54:29.521Z"
 }
