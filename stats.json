@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1741733,
+  "lastTotal": 1742998,
   "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
@@ -44,13 +44,20 @@
       "month": "Apr",
       "day": "2",
       "total": 1741733
+    },
+    {
+      "key": "2026-Apr-3",
+      "year": "2026",
+      "month": "Apr",
+      "day": "3",
+      "total": 1742998
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 6044
+        "plays": 7309
       }
     ],
     "monthly": [
@@ -68,7 +75,7 @@
       },
       {
         "label": "Apr",
-        "plays": 1206
+        "plays": 2471
       },
       {
         "label": "May",
@@ -110,7 +117,7 @@
       },
       {
         "label": "2",
-        "plays": 0
+        "plays": 1265
       },
       {
         "label": "3",
@@ -226,15 +233,15 @@
       }
     ]
   },
-  "playback_count": 1741733,
+  "playback_count": 1742998,
   "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
   "tracks": [
     {
       "id": 1510172020,
       "title": "Psycho Dreams (HARDSTYLE REMIX)",
-      "playback_count": 387750,
-      "likes_count": 3780,
+      "playback_count": 388217,
+      "likes_count": 3781,
       "comment_count": 53,
       "reposts_count": 32,
       "download_count": 0,
@@ -245,7 +252,7 @@
     {
       "id": 1624227204,
       "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
-      "playback_count": 315055,
+      "playback_count": 315222,
       "likes_count": 3781,
       "comment_count": 65,
       "reposts_count": 51,
@@ -257,7 +264,7 @@
     {
       "id": 1665544803,
       "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
-      "playback_count": 145402,
+      "playback_count": 145508,
       "likes_count": 1422,
       "comment_count": 34,
       "reposts_count": 23,
@@ -269,8 +276,8 @@
     {
       "id": 1710205407,
       "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
-      "playback_count": 127465,
-      "likes_count": 1519,
+      "playback_count": 127675,
+      "likes_count": 1520,
       "comment_count": 13,
       "reposts_count": 25,
       "download_count": 0,
@@ -281,8 +288,8 @@
     {
       "id": 1518557188,
       "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
-      "playback_count": 90567,
-      "likes_count": 799,
+      "playback_count": 90606,
+      "likes_count": 800,
       "comment_count": 13,
       "reposts_count": 15,
       "download_count": 0,
@@ -293,7 +300,7 @@
     {
       "id": 1436304634,
       "title": "Badda Boo - Искренности (DUMBZZERA HARDSTYLE REMIX)",
-      "playback_count": 36789,
+      "playback_count": 36794,
       "likes_count": 371,
       "comment_count": 12,
       "reposts_count": 3,
@@ -310,10 +317,10 @@
     "dailyYear": "2026",
     "dailyMonth": "Apr"
   },
-  "likes": 18773,
+  "likes": 18777,
   "comments": 369,
   "reposts": 375,
   "downloads": 1,
   "trackCount": 46,
-  "updatedAt": "2026-04-02T02:38:38.990Z"
+  "updatedAt": "2026-04-03T02:13:56.116Z"
 }
