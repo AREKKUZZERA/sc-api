@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1767770,
+  "lastTotal": 1768871,
   "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
@@ -198,13 +198,20 @@
       "month": "Apr",
       "day": "24",
       "total": 1767770
+    },
+    {
+      "key": "2026-Apr-25",
+      "year": "2026",
+      "month": "Apr",
+      "day": "25",
+      "total": 1768871
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 32081
+        "plays": 33182
       }
     ],
     "monthly": [
@@ -222,7 +229,7 @@
       },
       {
         "label": "Apr",
-        "plays": 27243
+        "plays": 28344
       },
       {
         "label": "May",
@@ -352,7 +359,7 @@
       },
       {
         "label": "24",
-        "plays": 0
+        "plays": 1101
       },
       {
         "label": "25",
@@ -380,15 +387,15 @@
       }
     ]
   },
-  "playback_count": 1767770,
+  "playback_count": 1768871,
   "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
   "tracks": [
     {
       "id": 1510172020,
       "title": "Psycho Dreams (HARDSTYLE REMIX)",
-      "playback_count": 396312,
-      "likes_count": 3843,
+      "playback_count": 396694,
+      "likes_count": 3844,
       "comment_count": 53,
       "reposts_count": 30,
       "download_count": 0,
@@ -399,9 +406,9 @@
     {
       "id": 1624227204,
       "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
-      "playback_count": 318955,
-      "likes_count": 3785,
-      "comment_count": 65,
+      "playback_count": 319100,
+      "likes_count": 3788,
+      "comment_count": 66,
       "reposts_count": 53,
       "download_count": 0,
       "permalink_url": "https://soundcloud.com/arekkuzzera/angel-vox-vozvrashchaysya-hardstyle-remix",
@@ -411,8 +418,8 @@
     {
       "id": 1665544803,
       "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
-      "playback_count": 147132,
-      "likes_count": 1429,
+      "playback_count": 147233,
+      "likes_count": 1428,
       "comment_count": 34,
       "reposts_count": 23,
       "download_count": 0,
@@ -423,9 +430,9 @@
     {
       "id": 1710205407,
       "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
-      "playback_count": 130999,
+      "playback_count": 131140,
       "likes_count": 1554,
-      "comment_count": 13,
+      "comment_count": 14,
       "reposts_count": 27,
       "download_count": 0,
       "permalink_url": "https://soundcloud.com/arekkuzzera/violent-vira-i-dont-care-hardstyle-remix",
@@ -435,7 +442,7 @@
     {
       "id": 1518557188,
       "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
-      "playback_count": 91391,
+      "playback_count": 91437,
       "likes_count": 807,
       "comment_count": 13,
       "reposts_count": 15,
@@ -445,16 +452,16 @@
       "created_at": "2023-05-20T18:25:59Z"
     },
     {
-      "id": 1436304634,
-      "title": "Badda Boo - Искренности (DUMBZZERA HARDSTYLE REMIX)",
-      "playback_count": 36995,
-      "likes_count": 371,
-      "comment_count": 12,
-      "reposts_count": 3,
+      "id": 1610026278,
+      "title": "Серега Пират - тп на аме (HARDSTYLE REMIX)",
+      "playback_count": 37006,
+      "likes_count": 378,
+      "comment_count": 5,
+      "reposts_count": 5,
       "download_count": 0,
-      "permalink_url": "https://soundcloud.com/arekkuzzera/stepen-iskrennosti-dumbzzera-hardstyle-remix",
-      "artwork_url": "https://i1.sndcdn.com/artworks-tHqcxpQ4tsYIWoCb-Cy49fQ-large.jpg",
-      "created_at": "2023-01-31T04:02:26Z"
+      "permalink_url": "https://soundcloud.com/arekkuzzera/serega-pirat-tp-na-ame-hardstyle-remix",
+      "artwork_url": "https://i1.sndcdn.com/artworks-jG2WKXmZGUQvMukr-w47y2Q-large.jpg",
+      "created_at": "2023-09-06T19:36:35Z"
     }
   ],
   "historyMeta": {
@@ -464,10 +471,10 @@
     "dailyYear": "2026",
     "dailyMonth": "Apr"
   },
-  "likes": 18934,
-  "comments": 370,
+  "likes": 18945,
+  "comments": 372,
   "reposts": 377,
   "downloads": 2,
   "trackCount": 46,
-  "updatedAt": "2026-04-24T02:56:21.849Z"
+  "updatedAt": "2026-04-25T02:25:40.620Z"
 }
