@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1774481,
+  "lastTotal": 1775589,
   "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
@@ -240,13 +240,20 @@
       "month": "Apr",
       "day": "30",
       "total": 1774481
+    },
+    {
+      "key": "2026-May-1",
+      "year": "2026",
+      "month": "May",
+      "day": "1",
+      "total": 1775589
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 38792
+        "plays": 39900
       }
     ],
     "monthly": [
@@ -264,7 +271,7 @@
       },
       {
         "label": "Apr",
-        "plays": 33954
+        "plays": 35062
       },
       {
         "label": "May",
@@ -302,135 +309,139 @@
     "daily": [
       {
         "label": "1",
-        "plays": 1206
+        "plays": 0
       },
       {
         "label": "2",
-        "plays": 1265
+        "plays": 0
       },
       {
         "label": "3",
-        "plays": 1334
+        "plays": 0
       },
       {
         "label": "4",
-        "plays": 1144
+        "plays": 0
       },
       {
         "label": "5",
-        "plays": 841
+        "plays": 0
       },
       {
         "label": "6",
-        "plays": 1130
+        "plays": 0
       },
       {
         "label": "7",
-        "plays": 1062
+        "plays": 0
       },
       {
         "label": "8",
-        "plays": 1116
+        "plays": 0
       },
       {
         "label": "9",
-        "plays": 1122
+        "plays": 0
       },
       {
         "label": "10",
-        "plays": 1226
+        "plays": 0
       },
       {
         "label": "11",
-        "plays": 1205
+        "plays": 0
       },
       {
         "label": "12",
-        "plays": 948
+        "plays": 0
       },
       {
         "label": "13",
-        "plays": 1193
+        "plays": 0
       },
       {
         "label": "14",
-        "plays": 1164
+        "plays": 0
       },
       {
         "label": "15",
-        "plays": 1287
+        "plays": 0
       },
       {
         "label": "16",
-        "plays": 1262
+        "plays": 0
       },
       {
         "label": "17",
-        "plays": 1310
+        "plays": 0
       },
       {
         "label": "18",
-        "plays": 1191
+        "plays": 0
       },
       {
         "label": "19",
-        "plays": 1250
+        "plays": 0
       },
       {
         "label": "20",
-        "plays": 1273
+        "plays": 0
       },
       {
         "label": "21",
-        "plays": 1287
+        "plays": 0
       },
       {
         "label": "22",
-        "plays": 1277
+        "plays": 0
       },
       {
         "label": "23",
-        "plays": 1150
+        "plays": 0
       },
       {
         "label": "24",
-        "plays": 1101
+        "plays": 0
       },
       {
         "label": "25",
-        "plays": 1115
+        "plays": 0
       },
       {
         "label": "26",
-        "plays": 890
+        "plays": 0
       },
       {
         "label": "27",
-        "plays": 1152
+        "plays": 0
       },
       {
         "label": "28",
-        "plays": 1194
+        "plays": 0
       },
       {
         "label": "29",
-        "plays": 1259
+        "plays": 0
       },
       {
         "label": "30",
         "plays": 0
+      },
+      {
+        "label": "31",
+        "plays": 0
       }
     ]
   },
-  "playback_count": 1774481,
+  "playback_count": 1775589,
   "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
   "tracks": [
     {
       "id": 1510172020,
       "title": "Psycho Dreams (HARDSTYLE REMIX)",
-      "playback_count": 398675,
-      "likes_count": 3858,
+      "playback_count": 399054,
+      "likes_count": 3857,
       "comment_count": 53,
       "reposts_count": 30,
       "download_count": 0,
@@ -441,8 +452,8 @@
     {
       "id": 1624227204,
       "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
-      "playback_count": 320000,
-      "likes_count": 3791,
+      "playback_count": 320160,
+      "likes_count": 3794,
       "comment_count": 66,
       "reposts_count": 53,
       "download_count": 0,
@@ -453,7 +464,7 @@
     {
       "id": 1665544803,
       "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
-      "playback_count": 147592,
+      "playback_count": 147668,
       "likes_count": 1430,
       "comment_count": 34,
       "reposts_count": 23,
@@ -465,8 +476,8 @@
     {
       "id": 1710205407,
       "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
-      "playback_count": 131866,
-      "likes_count": 1561,
+      "playback_count": 132013,
+      "likes_count": 1563,
       "comment_count": 13,
       "reposts_count": 28,
       "download_count": 0,
@@ -477,8 +488,8 @@
     {
       "id": 1518557188,
       "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
-      "playback_count": 91593,
-      "likes_count": 806,
+      "playback_count": 91630,
+      "likes_count": 807,
       "comment_count": 13,
       "reposts_count": 15,
       "download_count": 0,
@@ -489,7 +500,7 @@
     {
       "id": 1610026278,
       "title": "Серега Пират - тп на аме (HARDSTYLE REMIX)",
-      "playback_count": 37154,
+      "playback_count": 37175,
       "likes_count": 380,
       "comment_count": 5,
       "reposts_count": 5,
@@ -504,12 +515,12 @@
     "yearlyEnd": "2026",
     "monthlyYear": "2026",
     "dailyYear": "2026",
-    "dailyMonth": "Apr"
+    "dailyMonth": "May"
   },
-  "likes": 18991,
+  "likes": 19001,
   "comments": 372,
   "reposts": 378,
   "downloads": 2,
   "trackCount": 46,
-  "updatedAt": "2026-04-30T03:32:43.096Z"
+  "updatedAt": "2026-05-01T02:57:50.769Z"
 }
