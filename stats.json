@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1797594,
+  "lastTotal": 1798497,
   "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
@@ -380,13 +380,20 @@
       "month": "May",
       "day": "21",
       "total": 1797594
+    },
+    {
+      "key": "2026-May-22",
+      "year": "2026",
+      "month": "May",
+      "day": "22",
+      "total": 1798497
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 61905
+        "plays": 62808
       }
     ],
     "monthly": [
@@ -408,7 +415,7 @@
       },
       {
         "label": "May",
-        "plays": 22005
+        "plays": 22908
       },
       {
         "label": "Jun",
@@ -522,7 +529,7 @@
       },
       {
         "label": "21",
-        "plays": 0
+        "plays": 903
       },
       {
         "label": "22",
@@ -566,15 +573,15 @@
       }
     ]
   },
-  "playback_count": 1797594,
+  "playback_count": 1798497,
   "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
   "tracks": [
     {
       "id": 1510172020,
       "title": "Psycho Dreams (HARDSTYLE REMIX)",
-      "playback_count": 406673,
-      "likes_count": 3931,
+      "playback_count": 407079,
+      "likes_count": 3933,
       "comment_count": 53,
       "reposts_count": 30,
       "download_count": 0,
@@ -585,7 +592,7 @@
     {
       "id": 1624227204,
       "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
-      "playback_count": 323429,
+      "playback_count": 323441,
       "likes_count": 3802,
       "comment_count": 67,
       "reposts_count": 54,
@@ -597,8 +604,8 @@
     {
       "id": 1665544803,
       "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
-      "playback_count": 149280,
-      "likes_count": 1439,
+      "playback_count": 149406,
+      "likes_count": 1440,
       "comment_count": 34,
       "reposts_count": 23,
       "download_count": 0,
@@ -609,7 +616,7 @@
     {
       "id": 1710205407,
       "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
-      "playback_count": 134937,
+      "playback_count": 134939,
       "likes_count": 1586,
       "comment_count": 13,
       "reposts_count": 28,
@@ -621,7 +628,7 @@
     {
       "id": 1518557188,
       "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
-      "playback_count": 92391,
+      "playback_count": 92394,
       "likes_count": 808,
       "comment_count": 13,
       "reposts_count": 15,
@@ -633,7 +640,7 @@
     {
       "id": 1610026278,
       "title": "Серега Пират - тп на аме (HARDSTYLE REMIX)",
-      "playback_count": 37717,
+      "playback_count": 37738,
       "likes_count": 386,
       "comment_count": 5,
       "reposts_count": 5,
@@ -650,10 +657,10 @@
     "dailyYear": "2026",
     "dailyMonth": "May"
   },
-  "likes": 19156,
+  "likes": 19158,
   "comments": 373,
   "reposts": 382,
   "downloads": 2,
   "trackCount": 46,
-  "updatedAt": "2026-05-21T04:03:14.499Z"
+  "updatedAt": "2026-05-22T03:58:29.522Z"
 }
