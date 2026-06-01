@@ -1,6 +1,6 @@
 {
   "sinceYear": 2016,
-  "lastTotal": 1808693,
+  "lastTotal": 1809728,
   "lastTrackTitle": "AREKKUZZERA — All Tracks",
   "snapshots": [
     {
@@ -450,13 +450,20 @@
       "month": "May",
       "day": "31",
       "total": 1808693
+    },
+    {
+      "key": "2026-Jun-1",
+      "year": "2026",
+      "month": "Jun",
+      "day": "1",
+      "total": 1809728
     }
   ],
   "history": {
     "yearly": [
       {
         "label": "2026",
-        "plays": 73004
+        "plays": 74039
       }
     ],
     "monthly": [
@@ -478,7 +485,7 @@
       },
       {
         "label": "May",
-        "plays": 33104
+        "plays": 34139
       },
       {
         "label": "Jun",
@@ -512,141 +519,137 @@
     "daily": [
       {
         "label": "1",
-        "plays": 1100
+        "plays": 0
       },
       {
         "label": "2",
-        "plays": 1025
+        "plays": 0
       },
       {
         "label": "3",
-        "plays": 935
+        "plays": 0
       },
       {
         "label": "4",
-        "plays": 1206
+        "plays": 0
       },
       {
         "label": "5",
-        "plays": 1272
+        "plays": 0
       },
       {
         "label": "6",
-        "plays": 1085
+        "plays": 0
       },
       {
         "label": "7",
-        "plays": 1084
+        "plays": 0
       },
       {
         "label": "8",
-        "plays": 1052
+        "plays": 0
       },
       {
         "label": "9",
-        "plays": 962
+        "plays": 0
       },
       {
         "label": "10",
-        "plays": 1000
+        "plays": 0
       },
       {
         "label": "11",
-        "plays": 1017
+        "plays": 0
       },
       {
         "label": "12",
-        "plays": 1071
+        "plays": 0
       },
       {
         "label": "13",
-        "plays": 861
+        "plays": 0
       },
       {
         "label": "14",
-        "plays": 1457
+        "plays": 0
       },
       {
         "label": "15",
-        "plays": 1210
+        "plays": 0
       },
       {
         "label": "16",
-        "plays": 845
+        "plays": 0
       },
       {
         "label": "17",
-        "plays": 1219
+        "plays": 0
       },
       {
         "label": "18",
-        "plays": 1247
+        "plays": 0
       },
       {
         "label": "19",
-        "plays": 1059
+        "plays": 0
       },
       {
         "label": "20",
-        "plays": 1298
+        "plays": 0
       },
       {
         "label": "21",
-        "plays": 903
+        "plays": 0
       },
       {
         "label": "22",
-        "plays": 1576
+        "plays": 0
       },
       {
         "label": "23",
-        "plays": 1150
+        "plays": 0
       },
       {
         "label": "24",
-        "plays": 908
+        "plays": 0
       },
       {
         "label": "25",
-        "plays": 1139
+        "plays": 0
       },
       {
         "label": "26",
-        "plays": 1073
+        "plays": 0
       },
       {
         "label": "27",
-        "plays": 1068
+        "plays": 0
       },
       {
         "label": "28",
-        "plays": 1167
+        "plays": 0
       },
       {
         "label": "29",
-        "plays": 1038
+        "plays": 0
       },
       {
         "label": "30",
-        "plays": 1077
-      },
-      {
-        "label": "31",
         "plays": 0
       }
     ]
   },
-  "playback_count": 1808693,
+  "playback_count": 1809728,
   "trackTitle": "AREKKUZZERA — All Tracks",
   "artist": "AREKKUZZERA",
   "tracks": [
     {
       "id": 1510172020,
       "title": "Psycho Dreams (HARDSTYLE REMIX)",
-      "playback_count": 410338,
-      "likes_count": 3965,
+      "playback_count": 410699,
+      "likes_count": 3971,
       "comment_count": 53,
-      "reposts_count": 30,
+      "reposts_count": 31,
       "download_count": 0,
       "permalink_url": "https://soundcloud.com/arekkuzzera/psycho-dreams-hardstyle-remix",
       "artwork_url": "https://i1.sndcdn.com/artworks-iEtcmU2ryYqwMtIJ-1qVMgA-large.jpg",
@@ -655,9 +658,9 @@
     {
       "id": 1624227204,
       "title": "Angel Vox - возвращайся (HARDSTYLE REMIX)",
-      "playback_count": 325079,
+      "playback_count": 325215,
       "likes_count": 3803,
-      "comment_count": 67,
+      "comment_count": 65,
       "reposts_count": 54,
       "download_count": 0,
       "permalink_url": "https://soundcloud.com/arekkuzzera/angel-vox-vozvrashchaysya-hardstyle-remix",
@@ -667,9 +670,9 @@
     {
       "id": 1665544803,
       "title": "zhanulka – ты похож на кота (HARDSTYLE REMIX)",
-      "playback_count": 150198,
+      "playback_count": 150273,
       "likes_count": 1447,
-      "comment_count": 34,
+      "comment_count": 33,
       "reposts_count": 23,
       "download_count": 0,
       "permalink_url": "https://soundcloud.com/arekkuzzera/zhanulka-ty-pokhozh-na-kota-hardstyle-remix",
@@ -679,8 +682,8 @@
     {
       "id": 1710205407,
       "title": "VIOLENT VIRA - I Don’t Care (HARDSTYLE REMIX)",
-      "playback_count": 136315,
-      "likes_count": 1599,
+      "playback_count": 136421,
+      "likes_count": 1602,
       "comment_count": 13,
       "reposts_count": 28,
       "download_count": 0,
@@ -691,7 +694,7 @@
     {
       "id": 1518557188,
       "title": "Пошлая Молли - ТМСТС (HARDSTYLE REMIX)",
-      "playback_count": 92723,
+      "playback_count": 92758,
       "likes_count": 808,
       "comment_count": 13,
       "reposts_count": 16,
@@ -703,8 +706,8 @@
     {
       "id": 1610026278,
       "title": "Серега Пират - тп на аме (HARDSTYLE REMIX)",
-      "playback_count": 37974,
-      "likes_count": 387,
+      "playback_count": 38005,
+      "likes_count": 388,
       "comment_count": 5,
       "reposts_count": 5,
       "download_count": 0,
@@ -718,12 +721,12 @@
     "yearlyEnd": "2026",
     "monthlyYear": "2026",
     "dailyYear": "2026",
-    "dailyMonth": "May"
+    "dailyMonth": "Jun"
   },
-  "likes": 19221,
-  "comments": 374,
-  "reposts": 383,
+  "likes": 19255,
+  "comments": 369,
+  "reposts": 384,
   "downloads": 2,
   "trackCount": 46,
-  "updatedAt": "2026-05-31T03:45:24.229Z"
+  "updatedAt": "2026-06-01T03:59:44.981Z"
 }
